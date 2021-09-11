@@ -6,8 +6,11 @@
     font-weight:bold;
 }
 a {
-    font-size:20;
+    color:blue;
 }
 #headers {
     font-weight:bold;
+}
+.hover:hover{
+    font-size:25;
 }
