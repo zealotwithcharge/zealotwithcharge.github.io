@@ -11,6 +11,6 @@ a {
 #headers {
     font-weight:bold;
 }
-.hover:hover{
+p:hover{
     font-size:25;
 }
