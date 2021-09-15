@@ -19,6 +19,7 @@ a {
 }
 .top_list{
     display:inline-block;
+    margin-bottom:100px;
 }
 #headers {
     font-weight:bold;
