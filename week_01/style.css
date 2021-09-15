@@ -14,8 +14,9 @@ a:not(.top_list) {
 #top_bar{
     background:black;
     padding: 5px;
-    font-size:12px;
+    font-size:20px;
     text-transform:uppercase;
+    text-align:center;
 }
 .top_list{
     display:inline-block;
