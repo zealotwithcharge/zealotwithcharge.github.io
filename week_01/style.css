@@ -22,6 +22,7 @@ a:not(.top_list) {
     display:inline-block;
     margin-left:21px;
     margin-left:21px;
+    color:white;
 }
 #headers {
     font-weight:bold;
