@@ -24,7 +24,7 @@ a {
 #headers {
     font-weight:bold;
 }
-p:hover{
+.top_list:hover{
     font-size:25;
 }
 @media only screen and (max-width: 600px) {
