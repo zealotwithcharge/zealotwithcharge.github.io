@@ -8,7 +8,7 @@
 .links{
     font-weight:bold;
 }
-a {
+a:not(.top_list) {
     color:blue;
 }
 #top_bar{
