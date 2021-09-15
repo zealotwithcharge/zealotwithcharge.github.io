@@ -19,8 +19,6 @@ a:not(.top_list) {
 }
 .top_list{
     display:inline-block;
-    margin-left: 21px;
-    margin-right: 21px;
 }
 #headers {
     font-weight:bold;
