@@ -22,6 +22,9 @@ a:not(.top_list) {
     display:inline-block;
     margin-left:21px;
     margin-left:21px;
+    
+}
+.top_list a{
     color:white;
     text-decoration: none;
 }
