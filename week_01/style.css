@@ -11,6 +11,11 @@
 a {
     color:blue;
 }
+#top_bar{
+    background-color: black;
+    color: white;
+    
+}
 #headers {
     font-weight:bold;
 }
