@@ -23,6 +23,7 @@ a:not(.top_list) {
     margin-left:21px;
     margin-left:21px;
     color:white;
+    text-decoration: none;
 }
 #headers {
     font-weight:bold;
