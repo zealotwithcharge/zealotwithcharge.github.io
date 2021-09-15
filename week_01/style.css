@@ -19,7 +19,8 @@ a {
 }
 .top_list{
     display:inline-block;
-    margin: 21px auto;
+    margin-left: 21px;
+    margin-right: 21px;
 }
 #headers {
     font-weight:bold;
