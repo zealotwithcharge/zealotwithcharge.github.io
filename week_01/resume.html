@@ -11,14 +11,14 @@
     function on(id) {
       var id1 = id.slice(0,-1)
       document.getElementById(id1).style.display = "block";
-      document.getElementById(id).onclick = "off(this.id)";
+      document.getElementById(id).setAttribute( "onclick", "javascript: off(this.id);")
       document.getElementById(id).innerText = "Show Less";
     }
     
     function off(id) {
       var id1 = id.slice(0,-1)
       document.getElementById(id1).style.display = "none";
-      document.getElementById(id).onclick = "on(this.id)";
+      document.getElementById(id).setAttribute( "onclick", "javascript: on(this.id);")
       document.getElementById(id).innerText = "Learn More";
     }
     
