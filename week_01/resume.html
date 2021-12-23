@@ -20,14 +20,10 @@
   </script>
   <style>
     #overlay {
-  position: fixed;
+  position: absolute;
   display: none;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background-color: rgba(0,0,0,0.5);
   z-index: 2;
   cursor: pointer;
@@ -4504,7 +4500,7 @@
                         </div>
                       <img
                         src="/physics_project.png"
-                        style="object-fit:cover;flex-basis: 500px;width:100%;height:100%;" alt=""
+                        style="object-fit:fill;flex-basis: 500px;width:100%;height:100%;" alt=""
                         class="style__NoScriptImg-sc-1rs2qnb-0 style__Img-sc-1rs2qnb-1 bhdZGR"
                         data-object-fit="cover">
                         <button onclick="on()">Turn on overlay effect</button>
