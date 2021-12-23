@@ -5,6 +5,34 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script>
+
+    
+    function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+    
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+    
+ 
+  </script>
+  <style>
+    #overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+    </style>
   <script>try {
       document.documentElement.classList.add('js');
 
@@ -4465,12 +4493,23 @@
                       
                       <img src = "/empty.png" style = "object-fit: cover;width:400px" class="style__NoScriptImg-sc-1rs2qnb-0 style__Img-sc-1rs2qnb-1 bhdZGR"
                         data-object-fit="cover">
-                      <div>
+                      <div style = "width:100%;height:100%;position:relative">
+                        <div id="overlay" onclick="off()" style="box-sizing:border-box;width: 100%;height: 100%;">
+                          <div id="text" style="
+                            position: absolute;
+                            font-size: 50px;
+                            color: white;
+                            
+                        ">This is a description. AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH\</div>
+                        </div>
                       <img
                         src="/physics_project.png"
                         style="object-fit:cover;flex-basis: 500px;width:100%;height:100%;" alt=""
                         class="style__NoScriptImg-sc-1rs2qnb-0 style__Img-sc-1rs2qnb-1 bhdZGR"
-                        data-object-fit="cover"></div><noscript><img
+                        data-object-fit="cover">
+                        <button onclick="on()">Turn on overlay effect</button>
+                        
+                        </div><noscript><img
                           src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_1.jpg"
                           style="object-fit:cover" alt="" class="style__NoScriptImg-sc-1rs2qnb-0 jenRBy" /></noscript>
                     </div>
