@@ -24,8 +24,11 @@
     
     function setup(){
       var new_width = document.getElementById("list_container").width();
-      document.getElementsByClassName("emptier").width(new_width);
-
+      var x = document.getElementsByClassName("emptier");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.width = new_width
+      } 
     }
  
   </script>
