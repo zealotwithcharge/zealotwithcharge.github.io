@@ -23,7 +23,10 @@
     }
     
     function setup(){
-      var new_width = document.getElementById("list_container").offsetWidth;
+      var element = document.getElementById("list_container")
+      var style1 = getComputedStyle(element)
+      var new_width = style1.width
+
       var x = document.getElementsByClassName("emptier");
       var i;
       for (i = 0; i < x.length; i++) {
