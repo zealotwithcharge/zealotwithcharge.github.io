@@ -2,7 +2,192 @@
     class="js csspointerevents flexbox flexboxlegacy no-flexboxtweener flexwrap csstransitions cssanimations">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;400;600&display=swap" rel="stylesheet">
     <style>
+        video{
+            width:1116.670;
+            height:628;
+        }
+        .article-header{
+            line-height: 1.5;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+    font-size: 1em;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #2b2a29;
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    background-color: #dbd9d6;
+    background-image: url(gray_background.jpg);
+    background-size: 50%;
+    background-repeat: repeat;
+    padding-top: 40px;
+    padding-bottom: 40px;
+        }
+        .article-body{
+            line-height: 1.5;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+    font-size: 1em;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #2b2a29;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 70px;
+    background-image: url(gray_background.jpg);
+    background-size: 50%;
+    background-repeat: repeat;
+        }
+        .widget__wrapper.widget__wrapper--text.js-widget.js-widget--desktop.visible--desktop.js-widget--tablet.visible--tablet.js-widget--mobile.visible--mobile{
+            line-height: 1.5;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+    font-size: 1em;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #2b2a29;
+    box-sizing: border-box;
+        }
+        .widget.widget--body-component{
+            line-height: 1.5;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+    font-size: 1em;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #2b2a29;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+        }
+        .content-gutter.content-center.content-center--8-12.copy.copy--large.prose{
+            -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 953.333px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #2b2a29;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.375rem;
+    line-height: 1.636;
+    display: table;
+        }
+        .content-gutter.content-center.content-center--8-12.copy.copy--large.prose p{
+            -webkit-text-size-adjust: 100%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #2b2a29;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.375rem;
+    line-height: 1.636;
+    direction: ltr;
+    unicode-bidi: isolate;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+        }
+        .content-gutter.content-center.content-center--8-12.copy.copy--large.prose h2{
+            -webkit-text-size-adjust: 100%;
+    letter-spacing: -.01em;
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    unicode-bidi: isolate;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 600;
+    color: #2b2a29;
+    margin-top: 40px;
+    font-size: 1.75rem;
+    line-height: 1.357;
+        }
+        .content-center{
+            display: table;
+            line-height: 1.5;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+    font-size: 1em;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #2b2a29;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1440px;
+        }
+        .article-images{
+            content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    background-image: url(gray_background.jpg);
+    background-size: 50%;
+    background-repeat: repeat;
+    line-height: 1.5;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+    font-size: 1em;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #2b2a29;
+    box-sizing: border-box;
+    position: relative;
+    
+        }
+        .eyebrow,.article-header__eyebrow,.eyebrow.article-header__eyebrow::before{
+            -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    position: relative;
+    color: #e7e6e3;
+    display: inline-block;
+    padding: 3px 10px 2px;
+    font-size: .688rem;
+    line-height: 1.364;
+    background-color: #d1363a;
+        }
+        .heading,.heading--2,.article-header__heading
+        {
+            -webkit-text-size-adjust: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 960px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #2b2a29;
+    -webkit-font-smoothing: antialiased;
+    white-space: pre-wrap;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.1;
+        }
         <!--
         -->
         .osano-cm-window {
@@ -2660,7 +2845,7 @@
             color: #7e7e7e;
             font-size: 11px;
             margin: 16px 0 0 0;
-            font-weight: 800;
+            font-weight: 600;
             letter-spacing: .03em
         }
 
@@ -5471,7 +5656,7 @@
             padding: 8px 0;
             color: #292929;
             font-size: 13px;
-            font-weight: 800;
+            font-weight: 600;
             cursor: pointer;
             background: #bababa33;
             border-radius: 6.4px;
@@ -9107,7 +9292,7 @@
         src="https://siteintercept.qualtrics.com/dxjsmodule/12.8327016048e927965e51.chunk.js?Q_CLIENTVERSION=1.64.1&amp;Q_CLIENTTYPE=web&amp;Q_BRANDID=www.riotgames.com"></script>
 </head>
 
-<body class="page page--news riotbar-present" style="margin-top: 80px;">
+<body class="page page--news riotbar-present">
     <div class="osano-cm-window" dir="ltr">
         <!---->
         <div hidden="" class="osano-visually-hidden"> <span id="osano-cm-aria.newWindow">
@@ -9120,23 +9305,7 @@
                 <!---->Opens an external website in a new window
                 <!---->
             </span> </div>
-        <div role="dialog" id="c8082dce-8314-4917-9fb8-3fc9293f89dd"
-            aria-describedby="c8082dce-8314-4917-9fb8-3fc9293f89dd__label"
-            class="osano-cm-window__dialog osano-cm-dialog osano-cm-dialog--position_bottom osano-cm-dialog--type_bar osano-cm-dialog--hidden">
-            <div class="osano-cm-dialog__content osano-cm-content"> <span
-                    id="c8082dce-8314-4917-9fb8-3fc9293f89dd__label" class="osano-cm-content__message osano-cm-message">
-                    This website stores data such as cookies to enable essential site functionality, as well as
-                    marketing, personalization, and analytics. By remaining on this website you indicate your consent.
-                </span>
-                <!----><a rel="noopener" tabindex="0" href="https://www.riotgames.com/en/privacy-notice" target="_blank"
-                    class="osano-cm-storage-policy osano-cm-content__link osano-cm-link"
-                    aria-describedby="osano-cm-aria.newWindow">
-                    <!---->Privacy Notice
-                    <!---->
-                </a>
-                <!---->
-            </div>
-        </div> <button id="cff72ace-7481-411c-86bf-15f11c39ff89"
+        <button id="cff72ace-7481-411c-86bf-15f11c39ff89"
             class="osano-cm-window__widget osano-cm-widget osano-cm-widget--position_right" title="Cookie Preferences"
             aria-label="Cookie Preferences"> <svg width="40" height="40" viewBox="0 0 71.85 72.23"
                 xmlns="http://www.w3.org/2000/svg">
@@ -9181,32 +9350,33 @@
         <!---->
     </div><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWJH" height="0" width="0"
         style="display:none;visibility:hidden"></iframe>
-    <div class="a11y-navigation"><a href="#content">Jump to Main Content</a><a href="#riotbar-bar">Jump to Primary
-            Navigation</a></div>
+        <div class="riotbar-root"><div class="_3ABmHj7cDcj-eycoEvKDFc" style = "position:inherit !important"><div class="_13kdauBv1LuiyqRQxeyeuI riotbar-header-wrapper xg9xiFPhyNsZkRd0x1d8s" style = "position:inherit !important"><div class="_1HHPg3wFUKgbozh3A2CcVl riotbar-header "></div></div></div></div>
     <main id="content" class="main">
         <div class="row">
             <div class="l-col-three">
                 <div>
                     <header class="article-header">
-                        <div class="eyebrow article-header__eyebrow"><span>WIP</span></div>
+                        <div class="eyebrow article-header__eyebrow"> <span>WIP</span></div>
                         <h1 class="heading heading--2 article-header__heading">The One: Faker</h1>
                     </header>
                 </div>
                 <div class="article-images">
                     <div class="content-center">
-                        <div class="responsive-media" style="padding-bottom:56.25%"><img alt="" width="1440"
+                        <div class="responsive-media"><img alt="" width="1440"
                                 height="810" loading="lazy"
                                 src="/ryu.PNG"
                                 sizes="(min-width: 1440px) 1440px,100vw"
                                 srcset="https://www.riotgames.com/darkroom/400/0a8b4600c88cc7e4bd392b90405f892a:959356ea850be5e4ed38de3d887830d3/11-20-embargo-riot-riotxarcane-phase02-4k.jpg 400w, https://www.riotgames.com/darkroom/550/0a8b4600c88cc7e4bd392b90405f892a:0645e545c9568b9e5c2a205ed4f26800/11-20-embargo-riot-riotxarcane-phase02-4k.jpg 550w, https://www.riotgames.com/darkroom/960/0a8b4600c88cc7e4bd392b90405f892a:c33774da32865e738637879160b06834/11-20-embargo-riot-riotxarcane-phase02-4k.jpg 960w, https://www.riotgames.com/darkroom/1370/0a8b4600c88cc7e4bd392b90405f892a:1ae76de8c63a123e8d1da36c56b3a579/11-20-embargo-riot-riotxarcane-phase02-4k.jpg 1370w, https://www.riotgames.com/darkroom/1440/0a8b4600c88cc7e4bd392b90405f892a:db36c4fc05c48e6fd4fb6b9799f6b2ca/11-20-embargo-riot-riotxarcane-phase02-4k.jpg 1440w, https://www.riotgames.com/darkroom/2880/0a8b4600c88cc7e4bd392b90405f892a:0b18730c31fa1e155ccb6d664f16832a/11-20-embargo-riot-riotxarcane-phase02-4k.jpg 2880w">
                         </div>
                     </div>
-                </div>
-                <div class="article-body">
+                </div><div class="article-body" style = "margin-top:-20px;">
                     <div class="widget__wrapper widget__wrapper--text js-widget js-widget--desktop visible--desktop js-widget--tablet visible--tablet js-widget--mobile visible--mobile"
                         data-widget-id="430bfd9a9c6a4ea4ab4f0db09b794342">
                         <div class="widget widget--body-component">
                             <div class="content-gutter content-center content-center--8-12 copy copy--large prose">
+                                <br>
+                                <br>
+                                <br>
                                 <p dir="ltr">This is the proof of concept for a fan game dedicated to Faker. Faker often
                                     plays difficult platformers during his streams and so I thought it would be fun to
                                     make a platformer that tells Faker's journey to becoming "The One".</p>
@@ -9221,7 +9391,7 @@
                             </div>
                         </div>
                     </div>
-                    <video><source src="/ryu_video.mp4" type="video/mp4"></video>
+                    <video><source src="ryu_video.mp4" type="video/mp4"></video>
 
 
                     <div class="widget__wrapper widget__wrapper--text js-widget js-widget--desktop visible--desktop js-widget--tablet visible--tablet js-widget--mobile visible--mobile"
@@ -9243,18 +9413,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="widget__wrapper widget__wrapper--inlinevideo js-widget js-widget--desktop visible--desktop js-widget--tablet visible--tablet js-widget--mobile visible--mobile"
-                        data-widget-id="e9377c87f0447e7a2cc83f2caefb0864">
-                        <div class="widget widget--body-component">
-                            <div class="content-gutter content-center content-center--10-12">
-                                <div class="inline-video inline-video--full inline-video--center">
-                                    <div class="responsive-media" style="padding-bottom:56.25%"><iframe
-                                            src="//www.youtube.com/embed/bcMk4DXCeUE?showinfo=0&amp;rel=0" width="500"
-                                            height="281" allowfullscreen="" title="Embedded video"></iframe></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <video class = "content-gutter content-center content-center--10-12" controls><source src="ryu_video.mp4" type="video/mp4"></video>
                     <div class="widget__wrapper widget__wrapper--text js-widget js-widget--desktop visible--desktop js-widget--tablet visible--tablet js-widget--mobile visible--mobile"
                         data-widget-id="56ed70795381e1fce06b8aeb6d4ae693">
                         <div class="widget widget--body-component">
@@ -9312,18 +9471,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="widget__wrapper widget__wrapper--inlinevideo js-widget js-widget--desktop visible--desktop js-widget--tablet visible--tablet js-widget--mobile visible--mobile"
-                        data-widget-id="e246e7452f504f98b903b12ccd1e83aa">
-                        <div class="widget widget--body-component">
-                            <div class="content-gutter content-center content-center--10-12">
-                                <div class="inline-video inline-video--full inline-video--center">
-                                    <div class="responsive-media" style="padding-bottom:56.25%"><iframe
-                                            src="//www.youtube.com/embed/5hugGCZon3I?showinfo=0&amp;rel=0" width="500"
-                                            height="281" allowfullscreen="" title="Embedded video"></iframe></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <video class = "content-gutter content-center content-center--10-12" controls><source src="down.mp4" type="video/mp4"></video>
+                    <br>
+                    <video class = "content-gutter content-center content-center--10-12" controls><source src="up.mp4" type="video/mp4"></video>
+                    <br>
+                    <video class = "content-gutter content-center content-center--10-12" controls><source src="minions.mp4" type="video/mp4"></video>
+                    <br>
+                    <video class = "content-gutter content-center content-center--10-12" controls><source src="crazy.mp4" type="video/mp4"></video>
+
+
+
+
+
+
                     <div class="widget__wrapper widget__wrapper--text js-widget js-widget--desktop visible--desktop js-widget--tablet visible--tablet js-widget--mobile visible--mobile"
                         data-widget-id="9864945a0b44a01e994a816c35fe5cd2">
                         <div class="widget widget--body-component">
@@ -9375,103 +9535,7 @@
             </div>
         </div>
     </main>
-    <div class="js-language-selector"
-        data-props="{&quot;i18n&quot;:{&quot;__languages&quot;:[{&quot;name&quot;:&quot;Bahasa Indonesia&quot;,&quot;slug&quot;:&quot;id&quot;,&quot;code&quot;:&quot;id_id&quot;},{&quot;name&quot;:&quot;Bahasa Melayu&quot;,&quot;slug&quot;:&quot;ms&quot;,&quot;code&quot;:&quot;ms_MY&quot;},{&quot;name&quot;:&quot;Português do Brasil&quot;,&quot;slug&quot;:&quot;pt-br&quot;,&quot;code&quot;:&quot;pt_br&quot;},{&quot;name&quot;:&quot;Čeština&quot;,&quot;slug&quot;:&quot;cs&quot;,&quot;code&quot;:&quot;cs_CZ&quot;},{&quot;name&quot;:&quot;English&quot;,&quot;slug&quot;:&quot;en&quot;,&quot;code&quot;:&quot;en_US&quot;},{&quot;name&quot;:&quot;Français&quot;,&quot;slug&quot;:&quot;fr&quot;,&quot;code&quot;:&quot;fr_fr&quot;},{&quot;name&quot;:&quot;Deutsch&quot;,&quot;slug&quot;:&quot;de&quot;,&quot;code&quot;:&quot;de_de&quot;},{&quot;name&quot;:&quot;Ελληνικά&quot;,&quot;slug&quot;:&quot;el&quot;,&quot;code&quot;:&quot;el_GR&quot;},{&quot;name&quot;:&quot;Magyar&quot;,&quot;slug&quot;:&quot;hu&quot;,&quot;code&quot;:&quot;hu_HU&quot;},{&quot;name&quot;:&quot;Italiano&quot;,&quot;slug&quot;:&quot;it&quot;,&quot;code&quot;:&quot;it_IT&quot;},{&quot;name&quot;:&quot;日本語&quot;,&quot;slug&quot;:&quot;ja&quot;,&quot;code&quot;:&quot;ja_ja&quot;},{&quot;name&quot;:&quot;한국어&quot;,&quot;slug&quot;:&quot;ko&quot;,&quot;code&quot;:&quot;ko_ko&quot;},{&quot;name&quot;:&quot;Español (Latinoamérica)&quot;,&quot;slug&quot;:&quot;es-419&quot;,&quot;code&quot;:&quot;es_419&quot;},{&quot;name&quot;:&quot;Polski&quot;,&quot;slug&quot;:&quot;pl&quot;,&quot;code&quot;:&quot;pl_PL&quot;},{&quot;name&quot;:&quot;Română&quot;,&quot;slug&quot;:&quot;ro&quot;,&quot;code&quot;:&quot;ro_RO&quot;},{&quot;name&quot;:&quot;Русский&quot;,&quot;slug&quot;:&quot;ru&quot;,&quot;code&quot;:&quot;ru_ru&quot;},{&quot;name&quot;:&quot;中文 (简体字)&quot;,&quot;slug&quot;:&quot;zh-cn&quot;,&quot;code&quot;:&quot;zh_cn&quot;},{&quot;name&quot;:&quot;Español&quot;,&quot;slug&quot;:&quot;es&quot;,&quot;code&quot;:&quot;es_es&quot;},{&quot;name&quot;:&quot;ภาษาไทย&quot;,&quot;slug&quot;:&quot;th&quot;,&quot;code&quot;:&quot;th_th&quot;},{&quot;name&quot;:&quot;繁體中文&quot;,&quot;slug&quot;:&quot;zh-hant&quot;,&quot;code&quot;:&quot;zh_hant&quot;},{&quot;name&quot;:&quot;Türkçe&quot;,&quot;slug&quot;:&quot;tr&quot;,&quot;code&quot;:&quot;tr_tr&quot;},{&quot;name&quot;:&quot;Tiếng Việt&quot;,&quot;slug&quot;:&quot;vi&quot;,&quot;code&quot;:&quot;vi_vi&quot;}]}}">
-        <div class="language-selector">
-            <div class="language-selector__bg"></div>
-            <div class="language-selector__inner">
-                <div class="language-selector__panel">
-                    <div class="language-selector__close"><button type="button"
-                            class="button button--circle"><span><span class="icon"
-                                    style="width: 12px; height: 12px; line-height: 12px;"><span
-                                        class="is-vhidden">Close</span><svg viewBox="0 0 12 12">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0 1.4L1.4 0 12 10.6 10.6 12 0 1.4z"></path>
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0 10.6L10.6 0 12 1.4 1.4 12 0 10.6z"></path>
-                                    </svg></span></span></button></div>
-                    <div class="language-selector__content">
-                        <div class="heading heading--4">Language Selector</div>
-                        <p class="copy">Select your language</p>
-                        <div class="language-selector__list">
-                            <ul class="list--unstyled">
-                                <li><a class="text-button underline-button underline-button--dark" lang="id" href="/id">
-                                        <div class="heading heading--6">Bahasa Indonesia</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="ms" href="/ms">
-                                        <div class="heading heading--6">Bahasa Melayu</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="pt-br"
-                                        href="/pt-br">
-                                        <div class="heading heading--6">Português do Brasil</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="cs" href="/cs">
-                                        <div class="heading heading--6">Čeština</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="en" href="/en">
-                                        <div class="heading heading--6">English</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="fr" href="/fr">
-                                        <div class="heading heading--6">Français</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="de" href="/de">
-                                        <div class="heading heading--6">Deutsch</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="el" href="/el">
-                                        <div class="heading heading--6">Ελληνικά</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="hu" href="/hu">
-                                        <div class="heading heading--6">Magyar</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="it" href="/it">
-                                        <div class="heading heading--6">Italiano</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="ja" href="/ja">
-                                        <div class="heading heading--6">日本語</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="ko" href="/ko">
-                                        <div class="heading heading--6">한국어</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="es-419"
-                                        href="/es-419">
-                                        <div class="heading heading--6">Español (Latinoamérica)</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="pl" href="/pl">
-                                        <div class="heading heading--6">Polski</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="ro" href="/ro">
-                                        <div class="heading heading--6">Română</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="ru" href="/ru">
-                                        <div class="heading heading--6">Русский</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="zh-cn"
-                                        href="/zh-cn">
-                                        <div class="heading heading--6">中文 (简体字)</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="es" href="/es">
-                                        <div class="heading heading--6">Español</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="th" href="/th">
-                                        <div class="heading heading--6">ภาษาไทย</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="zh-hant"
-                                        href="/zh-hant">
-                                        <div class="heading heading--6">繁體中文</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="tr" href="/tr">
-                                        <div class="heading heading--6">Türkçe</div>
-                                    </a></li>
-                                <li><a class="text-button underline-button underline-button--dark" lang="vi" href="/vi">
-                                        <div class="heading heading--6">Tiếng Việt</div>
-                                    </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <div class="instance-data">
         <div
             data-instance="{&quot;_id&quot;:&quot;59e48cddc45011433aab1087&quot;,&quot;name&quot;:&quot;English&quot;,&quot;account&quot;:&quot;59e48c9ba59469493a863953&quot;,&quot;enabled&quot;:true,&quot;strapline&quot;:null,&quot;addThisId&quot;:null,&quot;facebookId&quot;:null,&quot;twitterId&quot;:null,&quot;googlePlusId&quot;:null,&quot;pinterestId&quot;:null,&quot;instagramId&quot;:null,&quot;googleAnalyticsPropertyId&quot;:null,&quot;footerHtml&quot;:null,&quot;dateCreated&quot;:&quot;2017-10-16T10:40:47.363Z&quot;,&quot;flag&quot;:&quot;bac016efc815d6d8c44d83f1e9775018&quot;,&quot;slug&quot;:&quot;en&quot;,&quot;languageCode&quot;:&quot;en_US&quot;,&quot;translations&quot;:{&quot;ArticleDateFormat&quot;:&quot;MMM D, YYYY&quot;,&quot;TourDateFormat&quot;:&quot;MMM D, YYYY&quot;,&quot;HeaderSupportButton&quot;:&quot;Support&quot;,&quot;HeaderSearchButton&quot;:&quot;Search&quot;,&quot;HeaderExploreButton&quot;:&quot;News&quot;,&quot;HeaderToggleMenuA11y&quot;:&quot;Toggle menu&quot;,&quot;HeaderSearchA11y&quot;:&quot;Search&quot;,&quot;HeaderCloseSearchA11y&quot;:&quot;Close Search&quot;,&quot;MainNavigationSupportUrl&quot;:&quot;https://support.riotgames.com&quot;,&quot;MainNavigationExploreUrl&quot;:&quot;/news&quot;,&quot;MainNavigationSearchUrl&quot;:&quot;/search&quot;,&quot;NavAriaLabel&quot;:&quot;Primary Navigation&quot;,&quot;FooterToTheSurfaceText&quot;:&quot;To the Surface&quot;,&quot;FooterLeagueOfLegendsUrl&quot;:&quot;http://na.leagueoflegends.com&quot;,&quot;FooterLeagueOfLegendsLinkText&quot;:&quot;League of Legends&quot;,&quot;FooterCopyrightText&quot;:&quot;© 2021 Riot Games, Inc. All Rights Reserved.&quot;,&quot;FooterCookiePreferences&quot;:&quot;Cookie Preferences&quot;,&quot;ExploreCarouselItemViewArticleText&quot;:&quot;See More&quot;,&quot;ExploreCarouselItemAllLatestText&quot;:&quot;All Latest&quot;,&quot;HeroScrollToExploreText&quot;:&quot;Scroll To Explore&quot;,&quot;LiveStreamMediaCaptionType&quot;:&quot;Live Stream&quot;,&quot;VideoMediaCaptionType&quot;:&quot;Video&quot;,&quot;VideoOverlayWatchingText&quot;:&quot;Watching&quot;,&quot;DisciplineListLearnMoreText&quot;:&quot;Learn More&quot;,&quot;FaqSelectorLinkText&quot;:&quot;View All Questions&quot;,&quot;ConnectWithUsHeader&quot;:&quot;Connect With Us&quot;,&quot;DisciplineGridViewFilter&quot;:&quot;Filter by&quot;,&quot;DisciplineGridViewFilterAllOption&quot;:&quot;All Categories&quot;,&quot;WidgetOpenPositions&quot;:&quot;Open Positions:&quot;,&quot;WidgetInlineImageViewFull&quot;:&quot;View full size image&quot;,&quot;FilterBarGridView&quot;:&quot;Grid View&quot;,&quot;FilterBarListView&quot;:&quot;List View&quot;,&quot;NoFilterResults&quot;:&quot;No results found for your current filter.&quot;,&quot;OfficeGridFilter&quot;:&quot;Filter by&quot;,&quot;OfficeGridFilterAllOption&quot;:&quot;All Regions&quot;,&quot;DisciplineOfficeHeroOpeningsView&quot;:&quot;View all openings&quot;,&quot;JobListDisciplineFilter&quot;:&quot;Select a Discipline&quot;,&quot;JobListSubDisciplineFilter&quot;:&quot;Select a Sub Discipline&quot;,&quot;JobListOfficeFilter&quot;:&quot;Select an Office&quot;,&quot;JobListProductFilter&quot;:&quot;Select a Product Team&quot;,&quot;JobListCraftFilter&quot;:&quot;Select a Craft&quot;,&quot;JobListNoResults&quot;:&quot;No jobs found for your current filters.&quot;,&quot;ExploreFilterText&quot;:&quot;Show Me&quot;,&quot;ExploreFilterAllText&quot;:&quot;Everything&quot;,&quot;LoadMoreText&quot;:&quot;Load More&quot;,&quot;SearchBarText&quot;:&quot;Search RiotGames.com&quot;,&quot;SearchBarLabel&quot;:&quot;Search&quot;,&quot;SearchNoQueryNoResultsText&quot;:&quot;Search RiotGames.com&quot;,&quot;SearchResultsCounter&quot;:&quot;Results&quot;,&quot;SearchNoResults&quot;:&quot;I don’t think that’s here, did Teemo hide it in a bush?&quot;,&quot;SearchNoQueryHeader&quot;:&quot;Search&quot;,&quot;SearchNavigationBackToResults&quot;:&quot;Back to All Results&quot;,&quot;SearchSectionJobs&quot;:&quot;Jobs&quot;,&quot;SearchSectionNews&quot;:&quot;News&quot;,&quot;SearchSectionSections&quot;:&quot;More&quot;,&quot;SearchSectionDisciplines&quot;:&quot;Disciplines&quot;,&quot;SearchSectionViewAll&quot;:&quot;View All&quot;,&quot;FilterBarOverlayFilterText&quot;:&quot;Filter by&quot;,&quot;FilterBarIconAltText&quot;:&quot;Close filters&quot;,&quot;LanguageSelectorHeader&quot;:&quot;Language Selector&quot;,&quot;LanguageSelectorText&quot;:&quot;Select your language&quot;,&quot;CloseButtonA11y&quot;:&quot;Close&quot;,&quot;CloseFiltersButtonA11y&quot;:&quot;Close filters&quot;,&quot;ManifestoItemMoreInformationA11y&quot;:&quot;More Information&quot;,&quot;RelatedContentReadMore&quot;:&quot;Read More&quot;,&quot;SocialA11yFacebook&quot;:&quot;Follow us on Facebook&quot;,&quot;SocialA11yTwitter&quot;:&quot;Follow us on Twitter&quot;,&quot;SocialA11yYouTube&quot;:&quot;Watch on YouTube&quot;,&quot;SocialA11yWeibo&quot;:&quot;Find us on Weibo&quot;,&quot;SocialShareA11yReddit&quot;:&quot;Share this on Reddit&quot;,&quot;SocialShareA11yFacebook&quot;:&quot;Share this on Facebook&quot;,&quot;SocialShareA11yTwitter&quot;:&quot;Share this on Twitter&quot;,&quot;SocialShareA11yEmail&quot;:&quot;Share this via Email&quot;,&quot;SocialShareA11yLinkedIn&quot;:&quot;Share this on LinkedIn&quot;,&quot;SocialShareA11yToggleMore&quot;:&quot;Toggle additional sharing options&quot;,&quot;RegionAsiaPacific&quot;:&quot;Asia Pacific&quot;,&quot;RegionEurope&quot;:&quot;Europe&quot;,&quot;RegionLatinAmerica&quot;:&quot;Latin America&quot;,&quot;RegionMiddleEast&quot;:&quot;Middle East&quot;,&quot;RegionNorthAmerica&quot;:&quot;North America&quot;,&quot;RegionOtherLocations&quot;:&quot;Other Locations&quot;,&quot;WatchVideoA11yText&quot;:&quot;Watch Video&quot;,&quot;MediaKitAssetActionWatchButton&quot;:&quot;Watch&quot;,&quot;MediaKitAssetActionDownloadButton&quot;:&quot;Download&quot;,&quot;MediaKitSearchResultsTitleAll&quot;:&quot;All&quot;,&quot;MediaKitSearchResultsTitleResultsFound_Plural_WithCategory&quot;:&quot;{$count} results for \&quot;{$query}\&quot; in {$category}&quot;,&quot;MediaKitSearchResultsTitleResultsFound_Singular_WithCategory&quot;:&quot;{$count} result for \&quot;{$query}\&quot; in {$category}&quot;,&quot;MediaKitSearchResultsTitleNoResultsFound_WithCategory&quot;:&quot;No results found for \&quot;{$query}\&quot; in {$category}&quot;,&quot;MediaKitSearchResultsTitleResultsFound_Plural_WithoutCategory&quot;:&quot;{$count} results for \&quot;{$query}\&quot;&quot;,&quot;MediaKitSearchResultsTitleResultsFound_Singular_WithoutCategory&quot;:&quot;{$count} result for \&quot;{$query}\&quot; &quot;,&quot;MediaKitSearchResultsTitleNoResultsFound_WithoutCategory&quot;:&quot;No results found for \&quot;{$query}\&quot;&quot;,&quot;MediaKitSearchBoxPlaceHolderText_WithCategory&quot;:&quot;Search {$category}&quot;,&quot;MediaKitSearchBoxPlaceHolderText_WithoutCategory&quot;:&quot;Search&quot;,&quot;PaginationNextButton&quot;:&quot;Next&quot;,&quot;PaginationPrevButton&quot;:&quot;Prev&quot;,&quot;ToursOfficeSelectorTourCountPlural&quot;:&quot;Tours&quot;,&quot;ToursOfficeSelectorTourCountSingular&quot;:&quot;Tour&quot;,&quot;RoadmapShortDateFormat&quot;:&quot;MMM YYYY&quot;,&quot;RoadmapLongDateFormat&quot;:&quot;MMMM YYYY&quot;,&quot;RoadmapStatusStarting&quot;:&quot;Starting&quot;,&quot;RoadmapStatusInProgress&quot;:&quot;In Progress&quot;,&quot;RoadmapStatusCompleted&quot;:&quot;Completed&quot;,&quot;RoadmapMobileInstructions&quot;:&quot;Swipe left/right to see more&quot;,&quot;PdfViewerDownloadText&quot;:&quot;Download&quot;,&quot;ArticleAuthorBioHeading&quot;:&quot;Author&quot;,&quot;CareersWidgetOpenPositions&quot;:&quot;Open positions&quot;,&quot;CareersWidgetOffices&quot;:&quot;Offices&quot;,&quot;WhatsHappeningSeeAll&quot;:&quot;See more&quot;,&quot;OpenJobCountPlural&quot;:&quot;Open Positions&quot;,&quot;DisciplineGridListViewOpeningsTextPlural&quot;:&quot;Openings&quot;,&quot;DisciplineGridListViewOpeningsTextSingular&quot;:&quot;Opening&quot;,&quot;OfficeGridListViewOpeningsTextSingular&quot;:&quot;Opening&quot;,&quot;OfficeGridListViewOpeningsTextPlural&quot;:&quot;Openings&quot;,&quot;DisciplineOfficeHeroOpeningsEyebrowPlural&quot;:&quot;Openings&quot;,&quot;DisciplineOfficeHeroOpeningsEyebrowSingular&quot;:&quot;Opening&quot;,&quot;JobListFilterOpenings&quot;:&quot;Open Positions&quot;,&quot;SearchDisciplineSectionOpeningsTextPlural&quot;:&quot;Openings&quot;,&quot;SearchDisciplineSectionOpeningsTextSingular&quot;:&quot;Opening&quot;,&quot;MediaKitLeagueOfLegendsGroup_General&quot;:&quot;General&quot;,&quot;MediaKitLeagueOfLegendsGroup_Champions&quot;:&quot;Champions&quot;,&quot;MediaKitLeagueOfLegendsCategory_Logos&quot;:&quot;League of Legends Logos&quot;,&quot;MediaKitLeagueOfLegendsCategory_GameScreenshots&quot;:&quot;Game Screenshots&quot;,&quot;MediaKitLeagueOfLegendsCategory_PromoVideos&quot;:&quot;Promo Videos&quot;,&quot;MediaKitLeagueOfLegendsCategory_PromoArt&quot;:&quot;Promo Art&quot;,&quot;MediaKitLeagueOfLegendsCategory_Music&quot;:&quot;Music&quot;,&quot;MediaKitLeagueOfLegendsCategory_Esports&quot;:&quot;Esports&quot;,&quot;MediaKitLeagueOfLegendsCategory_AllChampions&quot;:&quot;All Champions&quot;,&quot;MediaKitLeagueOfLegendsCategory_SplashArt&quot;:&quot;Splash Art&quot;,&quot;MediaKitLeagueOfLegendsCategory_ChampionPromoArt&quot;:&quot;Champion Promo Art&quot;,&quot;MediaKitLeagueOfLegendsCategory_ChampionTeaser&quot;:&quot;Champion Teaser&quot;,&quot;MediaKitLeagueOfLegendsCategory_SkinTeaser&quot;:&quot;Skin Teaser&quot;,&quot;MediaKitLeagueOfLegendsCategory_ChampionSpotlight&quot;:&quot;Champion Spotlight&quot;,&quot;MediaKitRiotGroup_General&quot;:&quot;&quot;,&quot;MediaKitRiotCategory_Logos&quot;:&quot;Logos&quot;,&quot;MediaKitRiotCategory_HQPhotos&quot;:&quot;HQ Photos&quot;},&quot;previewId&quot;:&quot;e5x5u2n&quot;,&quot;duplicatedInstance&quot;:null,&quot;order&quot;:6,&quot;englishTranslation&quot;:&quot;English&quot;,&quot;centerNav&quot;:true,&quot;riotBarLanguage&quot;:&quot;en&quot;,&quot;headerNavigation&quot;:[{&quot;url&quot;:&quot;/who-we-are&quot;,&quot;section&quot;:&quot;59e48ff12b5bfe4f3aa762a0&quot;,&quot;title&quot;:&quot;Who We Are&quot;,&quot;type&quot;:&quot;section&quot;,&quot;id&quot;:&quot;dfebfcd1932d957de3b4962d2f1a8915&quot;,&quot;subItems&quot;:[]},{&quot;url&quot;:&quot;/work-with-us&quot;,&quot;section&quot;:&quot;59fa4ffd013060f15d0e9f89&quot;,&quot;title&quot;:&quot;Work With Us&quot;,&quot;type&quot;:&quot;section&quot;,&quot;id&quot;:&quot;33a303754cf6e9a79c0b84b33ea492c2&quot;,&quot;subItems&quot;:[]},{&quot;url&quot;:&quot;/news&quot;,&quot;section&quot;:&quot;59e4d5cee32902fc208211b1&quot;,&quot;title&quot;:&quot;News&quot;,&quot;type&quot;:&quot;section&quot;,&quot;id&quot;:&quot;5dc77595f4c94563a96b4a52ea6a87ff&quot;,&quot;subItems&quot;:[]}],&quot;footerNavigation&quot;:[{&quot;url&quot;:&quot;/press&quot;,&quot;section&quot;:&quot;5aa03954f887066b4bd9846b&quot;,&quot;title&quot;:&quot;Press&quot;,&quot;type&quot;:&quot;section&quot;,&quot;id&quot;:&quot;e1eaf2b1a35aa5b17da5925a812141be&quot;},{&quot;url&quot;:&quot;/security&quot;,&quot;section&quot;:&quot;59e4d60fe32902fc208211b5&quot;,&quot;title&quot;:&quot;Security&quot;,&quot;type&quot;:&quot;section&quot;,&quot;id&quot;:&quot;025f51782fd7ca4f894b2891c485ca58&quot;},{&quot;url&quot;:&quot;/legal&quot;,&quot;section&quot;:&quot;59e4d606e32902fc208211b4&quot;,&quot;title&quot;:&quot;Legal&quot;,&quot;type&quot;:&quot;section&quot;,&quot;id&quot;:&quot;2dd0a83c058c3f4576fc5822f3eda6f4&quot;},{&quot;url&quot;:&quot;/leadership&quot;,&quot;section&quot;:&quot;5d719f8d9598ee2c6079a15f&quot;,&quot;title&quot;:&quot;Leadership&quot;,&quot;type&quot;:&quot;section&quot;,&quot;id&quot;:&quot;8fbaa6def08755e5e49bbf951bafc0d8&quot;},{&quot;url&quot;:&quot;/candidate-privacy&quot;,&quot;section&quot;:&quot;5afe00cd7e20935c034b077e&quot;,&quot;title&quot;:&quot;Candidate Privacy&quot;,&quot;type&quot;:&quot;section&quot;,&quot;id&quot;:&quot;aebdfbd5bcd521c3e15bbd00eedb10be&quot;},{&quot;url&quot;:&quot;/terms-of-service&quot;,&quot;section&quot;:&quot;5dc427022cfebc309e7ff39b&quot;,&quot;title&quot;:&quot;Terms of Service&quot;,&quot;type&quot;:&quot;section&quot;,&quot;id&quot;:&quot;a00bf236ea2f93a6395d5d822f493095&quot;},{&quot;url&quot;:&quot;/privacy-notice&quot;,&quot;section&quot;:&quot;5de14fff216c7f3042a07ea7&quot;,&quot;title&quot;:&quot;Privacy Notice&quot;,&quot;type&quot;:&quot;section&quot;,&quot;id&quot;:&quot;71a35c515ed81d25035a9aeed967955a&quot;},{&quot;url&quot;:&quot;https://support.riotgames.com/hc/en-us&quot;,&quot;section&quot;:null,&quot;title&quot;:&quot;Player Support&quot;,&quot;type&quot;:&quot;externalLink&quot;,&quot;id&quot;:&quot;b328539bb63a1b60c81d8863e22b3495&quot;},{&quot;url&quot;:&quot;/e-verify-right-to-work&quot;,&quot;section&quot;:&quot;5edaadd9fc76cb38025bf5c7&quot;,&quot;type&quot;:&quot;section&quot;,&quot;title&quot;:&quot;E-Verify&quot;,&quot;id&quot;:&quot;c4744ad1bf6063c024b7609663c191c6&quot;},{&quot;url&quot;:&quot;/accessibility&quot;,&quot;section&quot;:&quot;60a4554a218a3c1758461d19&quot;,&quot;title&quot;:&quot;Accessibility&quot;,&quot;type&quot;:&quot;section&quot;,&quot;id&quot;:&quot;1baa141ed27edb86d57d8c804ad29ac0&quot;}],&quot;__addThisId&quot;:null,&quot;__facebookId&quot;:null,&quot;__twitterId&quot;:null,&quot;__googlePlusId&quot;:null,&quot;__pinterestId&quot;:null,&quot;__instagramId&quot;:null}">
