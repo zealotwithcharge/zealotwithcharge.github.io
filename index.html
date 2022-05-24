@@ -4008,7 +4008,7 @@
     crossorigin="anonymous">
 </head>
 
-<body>
+<body  onload="set_size()" onresize="set_size()">
   <script type="text/javascript">
     (function (a, c, e, b, d, f) { a[b] = a[b] || []; a[b].push({ "gtm.start": (new Date).getTime(), event: "gtm.js" }); c.className += " " + e; d.end = f = function () { c.className = c.className.replace(RegExp(" ?" + e), "") }; (a[b] = a[b] || []).hide = d; a.setTimeout(function () { f(); d.end = null }, 2E3) })(window, document.documentElement, "optimize-loading", "dataLayer", { "GTM-N98J": !0 });
   </script>
@@ -4022,7 +4022,15 @@
     ; NREUM.loader_config = { accountID: "1691917", trustKey: "1484199", agentID: "383284444", licenseKey: "de0dec019a", applicationID: "383284444" }
       ; NREUM.info = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net", licenseKey: "de0dec019a", applicationID: "383284444", sa: 1 }
   </script>
-  <div id="___gatsby">
+  <div id="___gatsby" style ="height:min-content">
+    <script>
+      function set_size(){
+        doc_height = document.getElementById("___gatsby").offsetHeight;
+        console.log(doc_height);
+        document.getElementById("project_section").style.height = doc_height*0.3+"px";
+
+      }
+      </script>
     <div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper">
       <header class="style__Header-sc-1et2n9p-0 cCmlc">
         <div class="style__RiotBarContainer-sc-1aqbrua-0 gOrYvU">
@@ -4525,17 +4533,16 @@
             </svg></div>
         </section>
 
-        <section class="style__Wrapper-sc-1tlyqoa-0 style__ResponsiveWrapper-sc-1tlyqoa-17 hsYfbb">
+        <section id="project_section" class="style__Wrapper-sc-1tlyqoa-0 style__ResponsiveWrapper-sc-1tlyqoa-17 hsYfbb">
           <div class="style__Wrapper-sc-1b3i3yo-5 style__ResponsiveWrapper-sc-1b3i3yo-6 bOZYYv section-title">
             <div class="style__Title-sc-1b3i3yo-0 kUelPs">
               <div class="style__TextContainer-sc-1b3i3yo-1 boMXWR">
-                <div class="style__Text-sc-1b3i3yo-2 jblpPt">PAST PROJECTS</div>
+                <div class="style__Text-sc-1b3i3yo-2 jblpPt">                   PAST PROJECTS                                         </div>
               </div>
             </div>
             <div class="style__Content-sc-1b3i3yo-3 kUWoww">
-              <div class="style__Content-sc-1tlyqoa-1 dekDsQ">
-                <h2 class="style__Title-sc-1tlyqoa-7 style__MainTitle-sc-1tlyqoa-8 hqBltT"><i>PAST PROJECTS</i></h2>
-                <div class="style__Slideshow-sc-1tlyqoa-2 gUBieu">
+              <div class="style__Content-sc-1tlyqoa-1 dekDsQ" style = "display:flex;flex-direction:row-reverse;height:100%;padding-top:2%;padding-bottom:2%;margin-top:0;">
+                <div class="style__Slideshow-sc-1tlyqoa-2 gUBieu" style="height:100%;padding-bottom:0;">
                   <div id="slide1" class="style__SlideshowItem-sc-1tlyqoa-3 djBNyd is-active">
                     <div class="style__SlideshowItemImage-sc-1tlyqoa-4 bgpnhB" style = "display: flex;flex-flow: row nowrap;height: 100%;position: relative;">
                       
@@ -5123,7 +5130,7 @@
                         </div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                       </div>
                     </ul>
-                  </div>
+                </div>
                 </div>
               </div>
             </div>
