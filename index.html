@@ -36,7 +36,7 @@
  
   </script>
   <style>
-.style__CarouselWrapper-sc-1tlyqoa-10.eWxvcA {
+#skin_wrapper{
     overflow-y: scroll;
     scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
@@ -4027,7 +4027,7 @@
       function set_size(){
         doc_height = document.getElementById("___gatsby").offsetHeight;
         console.log(doc_height);
-        document.getElementById("project_section").style.height = doc_height*0.3+"px";
+        document.getElementById("project_section").style.height = doc_height*0.25+"px";
 
       }
       </script>
@@ -4540,13 +4540,13 @@
                 <div class="style__Text-sc-1b3i3yo-2 jblpPt">                   PAST PROJECTS                                         </div>
               </div>
             </div>
-            <div class="style__Content-sc-1b3i3yo-3 kUWoww">
-              <div class="style__Content-sc-1tlyqoa-1 dekDsQ" style = "display:flex;flex-direction:row;height:100%;padding-top:2%;padding-bottom:2%;margin-top:0;flex-shrink:0;">
-                      <div class="style__Side-sc-1tlyqoa-6 kcGhQe" id="list_container" style="width:min-content;margin-top:2%;margin-bottom:2%;height:100%">
+            <div class="style__Content-sc-1b3i3yo-3 kUWoww" style="padding:0 0;padding-bottom:5%;">
+              <div class="style__Content-sc-1tlyqoa-1 dekDsQ" style = "display:flex;flex-direction:row;width:90vw;height:100%;padding-top:3%;padding-bottom:3%;margin-top:0;">
+                      <div class="style__Side-sc-1tlyqoa-6 kcGhQe" id="list_container" style="flex-basis:20%;height:100%;order:1;flex-shrink:3;position:relative;">
                         <h2 class="style__Title-sc-1tlyqoa-7 style__SideTitle-sc-1tlyqoa-9 bxVefT"><i>PAST PROJECTS</i></h2>
-                        <div class="style__CarouselWrapper-sc-1tlyqoa-10 eWxvcA" id = "skin_wrapper">
+                        <div class="style__CarouselWrapper-sc-1tlyqoa-10 eWxvcA">
                           <ul class="style__CarouselContainer-sc-1tlyqoa-11 cUeBFP" id="skin_wheel" style="height:100%; margin-top:0px;">
-                            <div class="swiper swiper-container swiper-container-initialized swiper-container-vertical">
+                            <div class="swiper swiper-container swiper-container-initialized swiper-container-vertical" id = "skin_wrapper" style="width:92%"> 
                         <div class="swiper-wrapper"
                           style="transition-duration: 0ms; transform: translate3d(0px, 25px, 0px);">
                           <li id="skin1" class="style__CarouselItem-sc-1tlyqoa-12 eladJr swiper-slide is-active"><button
@@ -4690,7 +4690,7 @@
                     </ul>
                 </div>
                 </div>
-                <div class="style__Slideshow-sc-1tlyqoa-2 gUBieu" style="height:100%;padding-bottom:0;position:absolute;">
+                <div class="style__Slideshow-sc-1tlyqoa-2" style="height:100%;padding-bottom:0;flex-basis:80%;width:65vw;z-index:1;order:2;flex-shrink:2;position:relative;">
                   <div style="height:100%" id="slide1" class="style__SlideshowItem-sc-1tlyqoa-3 djBNyd is-active">
                     <div class="style__SlideshowItemImage-sc-1tlyqoa-4 bgpnhB" style = "position: relative;height:100%;">
                       
@@ -4698,7 +4698,6 @@
                         <div class="overlay" id="slide11" style="overflow-y:scroll;box-sizing:border-box;width:auto;height:auto;position:relative;height:100%;">
                           <div id="text" style="
                                                   position: absolute;
-                                                  top:20px;
                                                   left:40px;
                                                   background:rgba(0,0,0,0.5);font-size:20px;
                                                   color: white;background:rgba(0,0,0,0.5);font-family:Beaufort for LOL, serif;">
@@ -4719,7 +4718,7 @@
                             <p>As I got more comfortable using UE4, I noticed that the code could be a lot simpler. In addition, I have a better idea of what is possible with UE4.
                             Regarding gameplay, I need to find a more intuitive and straightforward way to hint Faker's combo to the player. Next, I need to implement the Orianna and Riven boss fight phases.</p>
                           </div>
-                        <img src="/ryu.PNG" style="object-fit:contain;background-color:rgb(0,0,0,0.9);flex-basis: 500px;width:100%;height:100%;" alt=""
+                        <img src="/ryu.PNG" style="object-fit:contain;background-color:rgb(0,0,0,0.9);flex-basis: 500px;width:100%;height:auto;position:absolute;top:0;z-index:-3;" alt=""
                           class="style__NoScriptImg-sc-1rs2qnb-0 style__Img-sc-1rs2qnb-1 bhdZGR" data-object-fit="cover">
                         <button class="buttoner" onclick="off(this.id)" id="slide11b">Show Less</button>
                       
