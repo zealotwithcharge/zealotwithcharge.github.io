@@ -3321,7 +3321,8 @@
         border:5px solid rgba(0,0,0,0);
     }
     #skin_wrapper{
-        border:5px solid (255,255,255,0); 
+        border:5px solid rgba(255,255,255,0); 
+        border-right:0px solid rgba(255,255,255,0); 
     }
 
     .overlay::-webkit-scrollbar,#skin_wrapper::-webkit-scrollbar{
@@ -3337,6 +3338,18 @@
     .overlay::-webkit-scrollbar-thumb,#skin_wrapper::-webkit-scrollbar-thumb{
         background: rgba(255,255,255,0.1);
         border-radius:10px;
+    }
+    ul div div li {
+        padding:0 !important;
+    }
+    #slide_main div div button {
+        display:none !important;
+    }
+    #wheel_title{
+        margin:0 !important;
+    }
+    #list_container{
+        min-width:0;
     }
     /* sc-component-id: style__ResponsiveWrapper-sc-1tlyqoa-17 */
     @media (max-width:1000px) {
@@ -3356,14 +3369,14 @@
           width:94% !important;
       }
       #slide_main{
-          width:94% !important;
+          width:100% !important;
       }
       .swiper-wrapper{
           flex-direction:row !important;
           transform: translate3d(0,0,0) !important;
       }
       #wheel_title{
-          display:hidden !important;
+          display:none !important;
       }
       #skin_wrapper{
           width:100% !important;
@@ -3381,9 +3394,14 @@
           padding-bottom:5%;
       }
       #text h3,h4,h5{
-          font-size:20px !important;}
+          font-size:2vw !important;}
         #text p{
-            font-size:12px;}
+            font-size:1.15vw;}
+    #wheel_wrapper{
+        padding-top:10px;
+width:120% !important;
+transform:translateX(-5%);
+    }
 
     }
 
@@ -3414,7 +3432,7 @@
     /* sc-component-id: style__Title-sc-1lcv94c-2 */
     .kfCVrH {
       margin: 0;
-      font-size: 16px;
+      font-size: 4vw;
       font-weight: bold;
       -webkit-letter-spacing: 0.08em;
       -moz-letter-spacing: 0.08em;
@@ -3441,7 +3459,7 @@
       -ms-flex: 1 1 auto;
       flex: 1 1 auto;
       text-align: center;
-      font-size: 12px;
+      font-size: 3vw;
       -webkit-letter-spacing: 0.08em;
       -moz-letter-spacing: 0.08em;
       -ms-letter-spacing: 0.08em;
@@ -4089,13 +4107,13 @@
       function set_size(){
         doc_height = document.getElementById("___gatsby").offsetHeight;
         console.log(doc_height);
-        document.getElementById("project_section").style.height = doc_height*0.25+"px";
+        //document.getElementById("project_section").style.height = doc_height*0.25+"px";
 
       }
       </script>
     <div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper">
       <header class="style__Header-sc-1et2n9p-0 cCmlc">
-        <div class="style__RiotBarContainer-sc-1aqbrua-0 gOrYvU">
+        <div class="style__RiotBarContainer-sc-1aqbrua-0 gOrYvU" style="background-color:#000913;">
           <nav class="style__Inner-sc-1aqbrua-1 dmSEaD"></nav>
         </div>
       </header>
@@ -4596,22 +4614,22 @@
         </section>
 
         <!--divider for vim-->
-        <section id="project_section" class="style__Wrapper-sc-1tlyqoa-0 style__ResponsiveWrapper-sc-1tlyqoa-17 hsYfbb">
-          <div class="style__Wrapper-sc-1b3i3yo-5 style__ResponsiveWrapper-sc-1b3i3yo-6 bOZYYv section-title">
-            <div class="style__Title-sc-1b3i3yo-0 kUelPs">
-              <div class="style__TextContainer-sc-1b3i3yo-1 boMXWR">
-                <div class="style__Text-sc-1b3i3yo-2 jblpPt">                   PAST PROJECTS                                         </div>
+        <section id="project_section" class="style__Wrapper-sc-1tlyqoa-0 style__ResponsiveWrapper-sc-1tlyqoa-17 hsYfbb" style = "font-family:Beaufort for LOL, serif;width:100%;aspect-ratio:16/9;position:relative;">
+          <div class="style__Wrapper-sc-1b3i3yo-5 style__ResponsiveWrapper-sc-1b3i3yo-6 bOZYYv section-title" style="height:100%;width:100%;position:absolute;top:0;">
+            <div class="style__Title-sc-1b3i3yo-0 kUelPs" style="height:100%;width:100%;position:absolute;top:0;">
+              <div class="style__TextContainer-sc-1b3i3yo-1 boMXWR" style="transform-origin:bottom left;margin:0;height:44%;transform:translateX(0%) rotate(90deg) !important;aspect-ratio:inherit;left:15px;pointer-events:none;">
+                  <div class="style__Text-sc-1b3i3yo-2 jblpPt" style="transform-origin:center;font-family:'NotoSans-Medium', sans-serif;width:100%;height:100%;transform:rotate(180deg) !important;padding:0;pointer-events:none;">                   PAST PROJECTS                                      </div>
               </div>
             </div>
-            <div class="style__Content-sc-1b3i3yo-3 kUWoww" style="padding:0 0;padding-bottom:5%;">
-              <div class="style__Content-sc-1tlyqoa-1 dekDsQ" id="project_flexbox" style = "display:flex;flex-direction:row;width:90vw;height:100%;padding-top:3%;padding-bottom:3%;margin-top:0;">
-                      <div class="style__Side-sc-1tlyqoa-6 kcGhQe" id="list_container" style="flex-basis:20%;height:100%;order:1;flex-shrink:3;position:relative;width:20%;display:flex;flex-direction:column;">
-                        <h2 id = "wheel_title" class="style__Title-sc-1tlyqoa-7 style__SideTitle-sc-1tlyqoa-9 bxVefT"><i style="margin:40px 20px 0 20px !important;">PAST PROJECTS</i></h2>
-                        <div class="style__CarouselWrapper-sc-1tlyqoa-10 eWxvcA" style = "width:100%;">
+            <div class="style__Content-sc-1b3i3yo-3 kUWoww" style="padding:0 5rem 5% 5rem;height:100%;width:100%;position:absolute;top:0;">
+              <div class="style__Content-sc-1tlyqoa-1 dekDsQ" id="project_flexbox" style = "display:flex;flex-direction:row;width:90%;height:100%;padding-top:3%;padding-bottom:3%;margin-top:0;">
+                      <div class="style__Side-sc-1tlyqoa-6 kcGhQe" id="list_container" style="order:1;flex-shrink:3;position:relative;width:25%;display:flex;flex-direction:column;">
+                        <h2 id = "wheel_title" class="style__Title-sc-1tlyqoa-7 style__SideTitle-sc-1tlyqoa-9 bxVefT"><i style="margin:40px 20px 0 20px !important;font-size:2.25vw;">PAST PROJECTS</i></h2>
+                        <div class="style__CarouselWrapper-sc-1tlyqoa-10 eWxvcA" id = "wheel_wrapper" style = "width:100%;">
                           <ul class="style__CarouselContainer-sc-1tlyqoa-11 cUeBFP" id="skin_wheel" style="height:100%; margin-top:0px;width:100%;">
                             <div class="swiper swiper-container swiper-container-initialized swiper-container-vertical" id = "skin_wrapper" style="width:92%;height:100%"> 
                         <div class="swiper-wrapper"
-                          style="transition-duration: 0ms; transform: translate3d(-30px, 25px, 0px);display:flex;flex-direction:row;">
+                          style="transition-duration: 0ms; transform: translate3d(0px, 25px, 0px);display:flex;flex-direction:column;">
                           <li id="skin1" class="style__CarouselItem-sc-1tlyqoa-12 eladJr swiper-slide is-active"><button
                               class="style__Button-sc-1tlyqoa-13 HMeXo" onclick="changeSkin1()">
                               <div
@@ -4767,7 +4785,7 @@
                           <div id="text" style="
                                                   position: absolute;
                                                   
-                                                  font-size:20px;
+                                                  font-size:1.15vw;
                                                   color: white;font-family:Beaufort for LOL, serif;">
                             <h3 style="font-size:36px">The One</h3>
                             <p>
@@ -4776,7 +4794,7 @@
                                     make a platformer that tells Faker's journey to becoming "The One". Currently, this proof of concept has two boss battle phases and 4
                                     platformer levels. Artwork is done by Jiyeon Park an Charlette Hwang.
                             </p>
-                            <h4 style="font-size:36px;">
+                            <h4 style="font-size:2vw;">
                               Relevant Links
                             </h4>
                             <p><a href="/theone.html">The link to a more detailed showcase of the project</a><br>
@@ -4807,7 +4825,7 @@
                                                   position: absolute;
                                                   
                                                   
-                                                  font-size:20px;
+                                                  font-size:1.15vw;
                                                   color: white;">
                                 <h3 style="font-size:36px">Ideal Gas Simulation</h3>
                                 <p>
@@ -4819,7 +4837,7 @@
                                   Kelvin), the mass of the molecule (in kg), the volume of the box (in m^3) and the number of molecules and
                                   creates the starting state accordingly.
                                 </p>
-                                <h4 style="font-size:36px;">
+                                <h4 style="font-size:2vw;">
                                   Relevant Links
                                 </h4>
                                 <p><a href="/IDS.pdf">The lab report for this simulation.</a><br>
@@ -4855,7 +4873,7 @@
                                                   position: absolute;
                                                   
                                                   
-                                                  font-size:20px;
+                                                  font-size:1.15vw;
                                                   color: white;">
                                 <h3 style="font-size:36px">Inter-Dimensional Brawl</h3>
                                 <p>
@@ -4867,7 +4885,7 @@
                                   I completely underestimated the development time and this was the project that really drilled into my head
                                   how hard game development was.
                                 </p>
-                                <h4 style="font-size:36px;">
+                                <h4 style="font-size:2vw;">
                                   Relevant Links
                                 </h4>
                                 <p>
@@ -4899,7 +4917,7 @@
                                                   position: absolute;
                                                   
                                                   
-                                                  font-size:20px;
+                                                  font-size:1.15vw;
                                                   color: white;">
                                 <h3 style="font-size:36px">Hue Ninja</h3>
                                 <p>
@@ -4908,7 +4926,7 @@
                                   version of a fidget spinner.
                                   This was my first independent coding project.
                                 </p>
-                                <h4 style="font-size:36px;">
+                                <h4 style="font-size:2vw;">
                                   Relevant Links
                                 </h4>
                                 <p>
@@ -4939,7 +4957,7 @@
                                                                         position: absolute;
                                                                         
                                                                         
-                                                                        font-size:20px;
+                                                                        font-size:1.15vw;
                                                                         color: white;">
                             <h3 style="font-size:36px">Chess Opening Practicer</h3>
                             <p>
@@ -4950,7 +4968,7 @@
                               This allows the player to test themselves on several openings.
                               The player is able to choose the variation they want to play and the program will play a random variation from that line.
                             </p>
-                            <h4 style="font-size:36px;">
+                            <h4 style="font-size:2vw;">
                               Relevant Links
                             </h4>
                             <p>
@@ -4981,7 +4999,7 @@
                                                   position: absolute;
                                                   
                                                   
-                                                  font-size:20px;
+                                                  font-size:1.15vw;
                                                   color: white;">
                                 <h3 style="font-size:36px">Facebook Clone</h3>
                                 <p style="line-height:150%">
@@ -5005,7 +5023,7 @@
                                   <br>
                                   
                                 </p>
-                                <h4 style="font-size:36px;position:relative;height:100%;top:-10px">
+                                <h4 style="font-size:2vw;position:relative;height:100%;top:-10px">
                                   Relevant Links
                                 </h4>
                                 <p>
@@ -5051,7 +5069,7 @@
                                                   position: absolute;
                                                   
                                                   
-                                                  font-size:20px;
+                                                  font-size:1.15vw;
                                                   color: white;">
                                 <h3 style="font-size:36px">LoL Challenger Stats</h3>
                                 <p>
@@ -5059,7 +5077,7 @@
                                   Currently, there are graphs for VPS (Vision per Sec), GPS (Gold per Sec), DPG (Damage per Gold), and CSPS (CS per Sec) for Challenger players in different regions.
                                   There is also a GPS and game time comparison of different divisions of the NA server.
                                 </p>
-                                <h4 style="font-size:36px;">
+                                <h4 style="font-size:2vw;">
                                   Relevant Links
                                 </h4>
                                 <p>
@@ -5090,7 +5108,7 @@
                                                   position: absolute;
                                                   
                                                   
-                                                  font-size:20px;
+                                                  font-size:1.15vw;
                                                   color: white;">
                                 <h3 style="font-size:36px">Almost, Maine</h3>
                                 <p>
@@ -5100,7 +5118,7 @@
                                   Marvalyn tries to convince Steve that that is not how pain or fear works and ends up kissing Steve.
                                   As Marvalyn leaves, she hits Steve's head again which causes Steve to shout "Ow!"
                                 </p>
-                                <h4 style="font-size:36px;">
+                                <h4 style="font-size:2vw;">
                                   Relevant Links
                                 </h4>
                                 <p>
@@ -5129,7 +5147,7 @@
                                                   position: absolute;
                                                   
                                                   
-                                                  font-size:20px;
+                                                  font-size:1.15vw;
                                                   color: white;">
                                 <h3 style="font-size:36px">Written Work</h3>
                                 <p>
@@ -5163,14 +5181,14 @@
                                                   position: absolute;
                                                   
                                                   
-                                                  font-size:20px;
+                                                  font-size:1.15vw;
                                                   color: white;">
                                 <h3 style="font-size:36px">Translations</h3>
                                 <p>
                                   I've been working as a freelance translator since 2019, mostly working with T1.
                                   I've also done work for the Institute for Ecological Civilization, translating their academic papers.
                                 </p>
-                                <h4 style="font-size:36px;">
+                                <h4 style="font-size:2vw;">
                                   Relevant Links
                                 </h4>
                                 <p>
@@ -5189,6 +5207,7 @@
             </div>
           </div>
         </section>
+        <!--for vim -->
         <script> function changeSkin1() {
 
             document.getElementById("skin1").className = "style__CarouselItem-sc-1tlyqoa-12 eladJr swiper-slide is-active";
@@ -5442,10 +5461,10 @@
 
           }</script>
 
-        <section class="style__Section-sc-1lcv94c-0 style__SectionResponsive-sc-1lcv94c-9 bbzbel">
+        <section class="style__Section-sc-1lcv94c-0 style__SectionResponsive-sc-1lcv94c-9 bbzbel" style = "font-size:3vw;">
           <div class="style__SectionInner-sc-1lcv94c-1 gywGJt">
-            <h1 class="style__Title-sc-1lcv94c-2 kfCVrH">Are you ready to start your journey with Charlette?</h1>
-            <div class="style__Description-sc-1lcv94c-3 gXWTTo" style="text-align:right"> Email:
+            <h1 class="style__Title-sc-1lcv94c-2 kfCVrH" style="font-size:1.5vw !important;">Are you ready to start your journey with Charlette?</h1>
+            <div class="style__Description-sc-1lcv94c-3 gXWTTo" style="text-align:right;font-size:1.5vw !important;"> Email:
               zealotwithcharge@gmail.com/chwang22@cmc.edu &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Phone: 909-905-8867</div>
           </div>
 
