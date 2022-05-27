@@ -3317,19 +3317,74 @@
         line-height: 1.2;
       }
     }
+    .overlay{
+        border:5px solid rgba(0,0,0,0);
+    }
+    #skin_wrapper{
+        border:5px solid (255,255,255,0); 
+    }
 
+    .overlay::-webkit-scrollbar,#skin_wrapper::-webkit-scrollbar{
+        width:5px;
+        height:5px;
+        transform:translate3d(-5px,0,0);
+    }
+    
+    .overlay::-webkit-scrollbar-track::hover,#skin_wrapper::-webkit-scrollbar-track::hover {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+    }
+    .overlay::-webkit-scrollbar-thumb,#skin_wrapper::-webkit-scrollbar-thumb{
+        background: rgba(255,255,255,0.1);
+        border-radius:10px;
+    }
     /* sc-component-id: style__ResponsiveWrapper-sc-1tlyqoa-17 */
     @media (max-width:1000px) {
       .hsYfbb {
         background: #000913;
       }
 
+      /*for vim */
       .hsYfbb .style__Text-sc-1b3i3yo-2 {
         color: rgba(255, 255, 255, 0.6);
       }
       #project_flexbox{
-          flex-direction: reverse-column;
+          flex-direction:column-reverse !important;
       }
+      #list_container{
+          flex-direction:row !important;
+          width:94% !important;
+      }
+      #slide_main{
+          width:94% !important;
+      }
+      .swiper-wrapper{
+          flex-direction:row !important;
+          transform: translate3d(0,0,0) !important;
+      }
+      #wheel_title{
+          display:hidden !important;
+      }
+      #skin_wrapper{
+          width:100% !important;
+          margin: 0;
+          overflow-y:hidden;
+          overflow-x:scroll;
+      }
+      #profile_section{
+          padding-bottom:0;
+      }
+      #description_section{
+          padding-bottom:0;
+      }
+      #project_section{
+          padding-bottom:5%;
+      }
+      #text h3,h4,h5{
+          font-size:20px !important;}
+        #text p{
+            font-size:12px;}
+
     }
 
     .hsYfbb .style__Content-sc-1b3i3yo-3 {
@@ -4045,7 +4100,7 @@
         </div>
       </header>
       <div class="style__Main-sc-1et2n9p-1 bvjlcS">
-        <section class="style__Wrapper-sc-1o884zt-30 koIGpu">
+        <section class="style__Wrapper-sc-1o884zt-30 koIGpu" id = "profile_section">
           <div class="style__BackgroundAsset-sc-1o884zt-1 hVViBI">
             <div class="style__BackgroundImage-sc-1o884zt-2 cIdAXF"><img src="/profile_pic.png"
                 style="object-fit:cover;object-position:center 20%" alt
@@ -4145,7 +4200,7 @@
             <path d="M4.6 47.8l-1.5 1.5 5 5 5-5-1.5-1.5M8.1 4.2v30" />
           </svg>
         </section>
-        <section class="style__Wrapper-ulelzu-0 gtiHtR">
+        <section class="style__Wrapper-ulelzu-0 gtiHtR" id="description_section">
           <h2 class="style__MobileTitle-ulelzu-3 eLsuxz">Abilities</h2>
           <div class="style__Wrapper-sc-1b3i3yo-5 style__ResponsiveWrapper-sc-1b3i3yo-6 bOZYYv">
             <div class="style__Title-sc-1b3i3yo-0 ifiaIg">
@@ -4540,7 +4595,7 @@
             </svg></div>
         </section>
 
-        //divider for vim
+        <!--divider for vim-->
         <section id="project_section" class="style__Wrapper-sc-1tlyqoa-0 style__ResponsiveWrapper-sc-1tlyqoa-17 hsYfbb">
           <div class="style__Wrapper-sc-1b3i3yo-5 style__ResponsiveWrapper-sc-1b3i3yo-6 bOZYYv section-title">
             <div class="style__Title-sc-1b3i3yo-0 kUelPs">
@@ -4550,13 +4605,13 @@
             </div>
             <div class="style__Content-sc-1b3i3yo-3 kUWoww" style="padding:0 0;padding-bottom:5%;">
               <div class="style__Content-sc-1tlyqoa-1 dekDsQ" id="project_flexbox" style = "display:flex;flex-direction:row;width:90vw;height:100%;padding-top:3%;padding-bottom:3%;margin-top:0;">
-                      <div class="style__Side-sc-1tlyqoa-6 kcGhQe" id="list_container" style="flex-basis:20%;height:100%;order:1;flex-shrink:3;position:relative;min-width:300px;width:20vw;">
-                        <h2 class="style__Title-sc-1tlyqoa-7 style__SideTitle-sc-1tlyqoa-9 bxVefT"><i style="margin:40px 20px 0 20px !important;">PAST PROJECTS</i></h2>
-                        <div class="style__CarouselWrapper-sc-1tlyqoa-10 eWxvcA">
-                          <ul class="style__CarouselContainer-sc-1tlyqoa-11 cUeBFP" id="skin_wheel" style="height:100%; margin-top:0px;">
+                      <div class="style__Side-sc-1tlyqoa-6 kcGhQe" id="list_container" style="flex-basis:20%;height:100%;order:1;flex-shrink:3;position:relative;width:20%;display:flex;flex-direction:column;">
+                        <h2 id = "wheel_title" class="style__Title-sc-1tlyqoa-7 style__SideTitle-sc-1tlyqoa-9 bxVefT"><i style="margin:40px 20px 0 20px !important;">PAST PROJECTS</i></h2>
+                        <div class="style__CarouselWrapper-sc-1tlyqoa-10 eWxvcA" style = "width:100%;">
+                          <ul class="style__CarouselContainer-sc-1tlyqoa-11 cUeBFP" id="skin_wheel" style="height:100%; margin-top:0px;width:100%;">
                             <div class="swiper swiper-container swiper-container-initialized swiper-container-vertical" id = "skin_wrapper" style="width:92%;height:100%"> 
                         <div class="swiper-wrapper"
-                          style="transition-duration: 0ms; transform: translate3d(-30px, 25px, 0px);">
+                          style="transition-duration: 0ms; transform: translate3d(-30px, 25px, 0px);display:flex;flex-direction:row;">
                           <li id="skin1" class="style__CarouselItem-sc-1tlyqoa-12 eladJr swiper-slide is-active"><button
                               class="style__Button-sc-1tlyqoa-13 HMeXo" onclick="changeSkin1()">
                               <div
@@ -4698,7 +4753,8 @@
                     </ul>
                 </div>
                 </div>
-                <div class="style__Slideshow-sc-1tlyqoa-2" style="height:100%;padding-bottom:0;flex-basis:80%;width:70vw;z-index:1;order:2;flex-shrink:2;position:relative;">
+                <!-- for vim -->
+                <div class="style__Slideshow-sc-1tlyqoa-2" id = "slide_main" style="height:100%;padding-bottom:0;flex-basis:80%;width:80%;z-index:1;order:2;flex-shrink:2;position:relative;">
                   <div style="height:100%" id="slide1" class="style__SlideshowItem-sc-1tlyqoa-3 djBNyd is-active">
                     <div class="style__SlideshowItemImage-sc-1tlyqoa-4 bgpnhB" style = "position: relative;height:100%;">
                               <div class = "contain_img" style = "position:relative;height:100%;z-index:-3;">
